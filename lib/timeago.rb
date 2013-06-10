@@ -5,9 +5,7 @@ module TimeAgo
     raise "This isn't a Time like class. I can't calculate the relative time" unless respond_to? :to_time
     rightnow = Time.new
     backthen = to_time
-
     delta_setting = (rightnow.to_i - backthen.to_i).floor
-  
     distance = distance_of_time_in_words(delta_setting)
   end
 

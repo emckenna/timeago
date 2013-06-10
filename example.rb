@@ -1,15 +1,3 @@
-timeago
--------
-
-Changes Time class to include this lib.
-
-requires active_support/time.
-
-Example
--------
-
-```ruby
-
 require './lib/timeago'
 require 'active_support/time'
 
@@ -35,17 +23,3 @@ puts past.relative_time
 past = now - 2.years
 puts past.relative_time
 
-# Output
-# a few seconds ago
-# half a minute ago
-# 5 minutes ago
-# 3 hours ago
-# 2 days ago
-# 3 months ago
-# 2 years ago
-
-
-```
-
-
-Copyright (c) 2012 Frederik Reich.
